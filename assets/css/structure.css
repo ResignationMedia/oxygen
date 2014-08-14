@@ -1,0 +1,559 @@
+/** Body wrapper
+ *
+ * Wraps entire page
+ * Float causes overflow to trigger on windows when tables get too
+ * wide for window.
+ * min-width prevents content collapse because of float.
+ * (Don't use width, because the max-width should be able to be > 100%)
+ ----------------------------------------------------------------------- */
+html,
+body {
+	height: 100%;
+	min-width: 900px;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+#str-body {
+	float: left;
+	height: auto;
+	margin-bottom: -41px;
+	min-height: 100%;
+	min-width: 960px;
+	width: 100%;
+}
+
+/* Header
+--------------------------------------- */
+#str-header {
+	height: 45px;
+	position: relative;
+}
+#logo,
+#hdr-nav {
+	float:left;
+	margin: 0;
+}
+#hdr-nav ul,
+#hdr-nav li {
+	margin: 0;
+	padding: 0;
+}
+#hdr-nav ul li {
+	display: inline;
+	margin: 0 2px;
+	position: relative;
+}
+/* sub-nav */
+#hdr-nav .nav-sub {
+	background-color: #eee;
+	display: none;
+	float: none;
+	position: absolute;
+}
+#hdr-nav li:hover .nav-sub {
+	display: block;
+	z-index: 199;
+}
+#hdr-nav .nav-sub li {
+	display: block;
+	margin: 2px 4px;
+}
+/* search */
+#hdr-search {
+	float: right;
+	position: relative;
+	width: 216px;
+}
+#s-terms,
+#s-button {
+	margin: 0;
+}
+.s-tips {
+	background: #fff;
+	display: none;
+	position:absolute;
+	z-index: 50;
+}
+
+#glb-search-form,
+#glb-filter-form,
+#crud-search-form {
+	background-color: #f0f0f0;
+	margin-bottom: -5px;
+	padding: 10px;
+}
+#glb-search-form,
+#crud-search-form {
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+#glb-search-box {
+	background-color: #e5e5e5;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 5px 8px;
+}
+#glb-search-box a {
+	float: right;
+	margin-top: 5px;
+	color: #666;
+}
+#glb-search-box .elm-block,
+#glb-search-options .elm-block,
+#crud-search-form .elm-block {
+	border-top: 0;
+	border-bottom: 0;
+	padding: 0;
+}
+#glb-search-form .elm-block,
+#crud-search-form .elm-block {
+	float: left;
+	margin: 0;
+}
+#glb-search-box .elm-block {
+	width: 40%;
+	min-width: 400px;
+}
+#glb-search-box .elm-block .elm-text {
+	width: 100%;
+	color: #666;
+}
+#glb-search-box .elm-submit {
+	position: relative;
+	top: 2px;
+	left: 15px;
+}
+#glb-search-options {
+	float: left;
+	margin-top: 10px;
+	width: 100%;
+}
+#glb-search-left,
+#glb-filter-left,
+#crud-search-left {
+	float: left;
+	border-right: 1px solid #cacbcb;
+	padding-right: 10px;
+	width: 49%;
+}
+#glb-search-right,
+#glb-filter-right,
+#crud-search-right {
+	float: left;
+	padding-left: 10px;
+	width: 48%
+}
+#glb-search-form .glb-search-row,
+#glb-filter-form .glb-filter-row,
+#crud-search-form .crud-search-row {
+	padding: 10px 0;
+	border-top: 1px solid #cacbcb;
+}
+#glb-search-form .glb-search-row.no-border,
+#glb-filter-form .glb-filter-row.no-border,
+#crud-search-form .crud-search-row.no-border {
+	border-top: 0;
+}
+#glb-search-form .select-all,
+#crud-search-form .select-all {
+	float: right
+}
+#glb-search-form label,
+#crud-search-form label {
+	float: left;
+	padding-top: 5px;
+	width: 125px;
+}
+#glb-search-form label,
+#glb-search-form .lbl-checkbox,
+#crud-search-form label,
+#crud-search-form .lbl-checkbox {
+	font-weight: bold;
+}
+#glb-search-form .has-radios label,
+#crud-search-form .has-radios label {
+	float: none;
+	width: auto;
+}
+#glb-search-ipp .elm-text,
+#crud-search-ipp .elm-text {
+	width: 50px
+}
+#glb-search-ipp span,
+#crud-search-ipp span {
+	position: relative;
+	top: 6px;
+	left: 5px;
+	color: #666;
+}
+#glb-search-form li,
+#crud-search-sort li {
+	float: left;
+	margin-top: 2px;
+}
+#crud-search-sort .has-select,
+#crud-search-sort .has-radios {
+	width: auto;
+}
+#crud-search-sort .has-radios {
+	clear: none;
+	margin-left: 15px;
+}
+#crud-search-sort .has-radios li {
+	float: left;
+	margin-right: 15px;
+}
+#crud-search-sort #sort_order2 {
+	margin-left: 25px;
+}
+#crud-search-enabled .has-radios .lbl-radios {
+	float: left;
+	width: 125px;
+}
+#crud-search-enabled ul {
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#crud-search-enabled li {
+	float: left;
+	margin: 0 15px 0 0;
+}
+#crud-search-enabled li label {
+	float: none;
+	width: auto;
+}
+#glb-search-show .elm-block,
+#glb-search-filter .elm-block {
+	width: 100%;
+}
+#glb-search-show .lbl-checkbox,
+#glb-search-filter .lbl-checkbox {
+	font-size: 11px;
+	color: #555;
+}
+#glb-search-show ul,
+#glb-search-filter ul {
+	clear: both;
+	margin-top: 10px;
+	width: 100%;
+}
+#glb-search-show ul li,
+#glb-search-filter ul li {
+	float: left;
+	width: 33%;
+}
+#glb-search-show ul input,
+#glb-search-filter ul input {
+	position: relative;
+	top: 1px;
+}
+#glb-search-show ul .lbl-checkbox,
+#glb-search-filter ul .lbl-checkbox {
+	padding-top: 0;
+	font-weight: normal;
+	font-size: 12px;
+	color: #000;
+}
+#glb-filter-left .elm-dsp-search:first-child {
+	border-top: 0;
+}
+#glb-filter-left .elm-dsp-search:last-child {
+	border-bottom: 0;
+}
+#glb-filter-left .elm-dsp-search {
+	padding: 10px 0;
+}
+#glb-filter-left label,
+#glb-filter-right .lbl-text,
+#glb-filter-right .lbl-input {
+	display: block;
+	padding-top: 6px;
+	font-weight: bold;
+	color: #333;
+}
+#glb-filter-left .where {
+	margin-left: 0;
+}
+#glb-filter-left input[type=text] {
+	width: 40%;
+}
+#glb-filter-right .lbl-text,
+#glb-filter-right .lbl-input {
+	float: left;
+	padding-top: 3px;
+	width: 110px;
+}
+#glb-filter-right select {
+	display: block;
+	width: 160px;
+}
+#crud-search-form .has-date-range {
+	width: 100%;
+}
+#crud-search-form .elm-dsp-date-range {
+	margin-bottom: 5px;
+}
+#crud-search-form .elm-dsp-search.has-date-range label.lbl-input {
+	margin-bottom: 15px;
+}
+#crud-search-form .elm-dsp-date-range label {
+	font-weight: normal;
+	width: 50px;
+}
+#crud-search-form .crud-search-row .has-checkboxes .select-all {
+	float: none;
+	width: 125px;
+}
+#crud-search-form .crud-search-row .has-checkboxes ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#crud-search-form .crud-search-row .has-checkboxes li {
+	margin-top: 0;
+	float: left;
+	width: 150px;
+}
+#crud-search-form .crud-search-row .has-checkboxes li label {
+	padding-top: 0;
+	font-weight: normal;
+}
+#search_results ul {
+	padding: 5px;
+}
+#crud-search .frm-footer {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+#crud-search ul.oxygen-grid {
+	margin: 0;
+}
+
+/* Column Structure
+-------------------------------------------------- */
+
+/**
+ * Main Content Panel
+ *
+ * Margin makes room for sidebar
+ */
+#str-page {
+	height: 100%;
+	padding-bottom: 50px;
+	padding-right: 241px;
+}
+
+#str-content {
+	float: left;
+	min-width: 100%;
+	padding-bottom: 20px;
+}
+
+/**
+ * Sidebar area
+ */
+#str-sidebar {
+	float: left;
+	margin-right: -241px;
+	padding-bottom: 20px;
+	width: 241px;
+}
+#str-sidebar aside {
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+/* Footer
+--------------------------------------- */
+#str-footer {
+	clear: both;
+	height: 31px;
+	line-height: 31px;
+	position: relative;
+}
+
+
+/* Content Header
+--------------------------------------- */
+#cnt-header {
+	position: relative;
+	min-height: 22px;
+}
+#cnt-header .fav-action {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+#cnt-header h1 {
+	margin: 0 100px 0 20px;
+}
+#cnt-header.fav-disabled h1 {
+	margin-left: 0;
+}
+#cnt-actions {
+	margin-right: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.cnt-actions-li {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	position: relative;
+}
+
+/* Columns
+--------------------------------------- */
+
+.grid {
+	margin: 0 auto;
+}
+
+/* Default large grid.
+-------------------------------------------------- */
+/* Works fine with older browsers that don't support media queries. */
+.c4-1,.c4-2,.c4-3,.c4-4,.c4-12,.c4-123,.c4-23,.c4-234,.c4-34,
+.c6-1,.c6-2,.c6-3,.c6-4,.c6-5,.c6-6,
+.c6-12,.c6-123,.c6-1234,.c6-12345,
+.c6-23,.c6-234,.c6-2345,.c6-23456,
+.c6-34,.c6-345,.c6-3456,
+.c6-45,.c6-456,.c6-56 {
+	display: inline; /* IE6/IE7 double-margin float bug fix */
+	position: relative;
+	float: left;
+	/* Prevent collapsing of empty columns. Min-height prevents collapse
+	everywhere but IE6. IE6 doesn't collapse empty collumns anyhow, so no need
+	for a fix there. */
+	min-height: 1px;
+}
+/** Grid Helper Classes
+ -------------------------------------------------- */
+/* Set overflow:hidden to crop overflow content.
+Good for user-generated content. Use this class if you want to support IE6 -- it has issues with overflow.
+Example usage: .grid.box or .hideoverflow.box. */
+.box .c6-1, .box .c6-2, .box .c6-3, .box .c6-4, .box .c6-5, .box .c6-6,
+.box .c4-1, .box .c4-2, .box .c4-3, .box .c4-4,
+.box .c6-12, .box .c6-123, .box .c6-1234, .box .c6-12345, .box .c6-123456,
+.box .c6-23, .box .c6-234, .box .c6-2345, .box .c6-23456,
+.box .c6-34, .box .c6-345, .box .c6-3456,
+.box .c6-45, .box .c6-456, .box .c6-56,
+.box .c4-12, .box .c4-123, .box .c4-1234,
+.box .c4-23, .box .c4-234,
+.box .c4-34,
+.hideoverflow .c6-1, .hideoverflow .c6-2, .hideoverflow .c6-3, .hideoverflow .c6-4, .hideoverflow .c6-5, .hideoverflow .c6-6,
+.hideoverflow .c4-1, .hideoverflow .c4-2, .hideoverflow .c4-3, .hideoverflow .c4-4,
+.hideoverflow .c6-12, .hideoverflow .c6-123, .hideoverflow .c6-1234, .hideoverflow .c6-12345, .hideoverflow .c6-123456,
+.hideoverflow .c6-23, .hideoverflow .c6-234, .hideoverflow .c6-2345, .hideoverflow .c6-23456,
+.hideoverflow .c6-34, .hideoverflow .c6-345, .hideoverflow .c6-3456,
+.hideoverflow .c6-45, .hideoverflow .c6-456, .hideoverflow .c6-56,
+.hideoverflow .c4-12, .hideoverflow .c4-123, .hideoverflow .c4-1234,
+.hideoverflow .c4-23, .hideoverflow .c4-234,
+.hideoverflow .c4-34 {
+	overflow: hidden;
+}
+
+/* First columns should always start a new row
+-------------------------------------------------- */
+/* zeroing out leftmost.unit margins */
+.c6-1,.c6-12,.c6-123,.c6-1234,.c6-12345,
+.c4-1,.c4-12,.c4-123 {
+	clear: left;
+}
+
+/* Widths
+-------------------------------------------------- */
+/* Sixths */
+.c6-1,.c6-2,.c6-3,.c6-4,.c6-5,.c6-6 { width: 16.665%; }
+/* Quarters */
+.c4-1,.c4-2,.c4-3,.c4-4 { width: 24.998%; }
+/* Thirds */
+.c6-12,.c6-23,.c6-34,.c6-45,.c6-56 { width: 33.332%; }
+/* Halves */
+.c4-12,.c4-23,.c4-34,
+.c6-123,.c6-234,.c6-345,.c6-456 { width: 49.998%; }
+/* Two-thirds */
+.c6-1234,.c6-2345,.c6-3456 { width: 66.665%; }
+/* three-quarters */
+.c4-123,.c4-234 { width: 74.998%; }
+/* Five-sixths */
+.c6-12345,.c6-23456 { width: 83.332%; }
+
+/**
+ * Gutter
+ -------------------------------------------------- */
+ /* Provide 12px of gutter in between all columns */
+
+[class^="c6-"] .inside, [class^="c4-"] .inside {
+	margin-left: 12px;
+}
+
+[class^="c6-"]:first-child .inside, [class^="c4-"]:first-child .inside {
+	margin-left: 0;
+}
+
+/* Full-width
+-------------------------------------------------- */
+/* These classes are not included in column float definitions, since they don't
+have either margin or fixed width. Including display:block and width styles
+so these classes can be used on non-block-level elements. */
+.c6-123456,
+.c4-1234 {
+	clear: both;
+	display: block;
+	min-height: 1px;
+	width: auto;
+}
+
+/** Grid Utilities
+ -------------------------------------------------- */
+/* Row Clearfix
+Uses variation of Nicolas Gallagher's Micro Clearfix.
+http://nicolasgallagher.com/micro-clearfix-hack/ */
+.row:before,
+.row:after {
+	content:"";
+	display:table;
+}
+.row:after {
+	clear:both;
+}
+.row {
+	/* Just in case: make sure that rows clear outside floats. */
+	clear: both;
+	/* For IE 6/7 (trigger hasLayout) */
+	zoom:1;
+}
+
+/* Common Padding/Spacing
+--------------------------------------- */
+.pad-common,
+#str-sidebar aside {
+	padding: 12px;
+}
+.pad-common #cnt-header {
+	margin-bottom: 12px;
+}
+#str-footer.pad-common {
+	padding: 4px 12px;
+}
+.box,
+.banner {
+	margin-bottom: 12px;
+}
+.box-header {
+	padding: 4px 12px;
+}
+.box-content,
+.banner {
+	padding: 10px 12px;
+}
+.box-footer {
+	padding: 0 6px;
+}

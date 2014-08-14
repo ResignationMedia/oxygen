@@ -1,0 +1,120 @@
+/* IE 7 Fix-it Styles
+--------------------------------------- */
+
+/**
+ * hasLayout fixes
+ * @see http://www.satzansatz.de/cssd/onhavinglayout.html
+ */
+.clearfix,
+.has-checkbox li,
+.has-checkbxoes li,
+.has-radio li,
+.has-radios li {
+	zoom: 1;
+}
+
+/**
+ * @bugfix IE7/Win Incorrect shrink-wrapping of hasLayout children of floats
+ *
+ * Mysterious workaround: width:100% doesn't work, and neither does giving hasLayout.
+ * What does work is giving the element min-width:100%.
+ * Unfortunately, this also disables shrink-wrapping of the parent.
+ * It also means we can't do padding to the left/right on these elements.
+ *
+ * @see http://www.brunildo.org/test/iew_shrink_lay.html
+ * @affected	IE7
+ * @valid		yes
+ */
+.pgn,
+#str-header,
+#str-content #cnt-header,
+.box fieldset.has-legend,
+.fieldset {
+	min-width: 100%;
+}
+
+/* z-index adjustments */
+#str-header { z-index: 11; }
+#cnt-header { z-index: 3; }
+.box-header { z-index: 1; }
+
+/* search */
+#s-terms {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* forms */
+.box form {
+	margin: 0;
+}
+.elm-block {
+	margin: 8px 0;
+}
+li .elm-checkbox,
+li .elm-radio {
+	margin: -1px 0 0 0;
+}
+
+/**
+ * Work around lack of support for box-sizing
+ * @see utility.css for these selectors
+ */
+.elm-width-full .elm-text,
+.elm-width-full .elm-password,
+.elm-width-full .elm-textarea {
+	width: 95%;
+}
+
+.btn {
+	height: auto;
+}
+.box .box-actions-li {
+	display: block;
+	float: left;
+}
+
+/* pagination */
+.pgn a,
+.pgn .pgn-list li {
+	display: inline;
+}
+
+/* this fieldset should not be full width */
+.box fieldset.frm-module {
+	min-width: 230px;
+}
+
+/* Content Header Fixes */
+#cnt-actions {
+	margin-right: -10px;
+}
+.cnt-actions-li {
+	display: inline;
+	margin-right: 0;
+}
+
+/**
+ * @bugfix Inline-block fix
+ *
+ * @see http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/
+ * @valid no
+ */
+.box .box-content .frm-module {
+	zoom: 1;
+	display: inline;
+}
+
+
+/* Box tabs adjustments - keeps bg images aligned */
+.box-tabs .ajax-tabs a,
+.box-tabs .box-header ul a {
+	border-right: 1px solid #fff;
+	width: 115px;
+}
+.box-tabs.base .box-content,
+.box-tabs.base .box-footer {
+	margin: 0 0 0 139px;
+}
+

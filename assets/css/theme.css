@@ -1,0 +1,1079 @@
+/* Defaults
+--------------------------------------- */
+body {
+	background: #f5f5f5;
+	font-size: 11px;
+	line-height: 1.4em;
+	color: #333;
+}
+body,
+td,
+th,
+input,
+select,
+textarea {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+}
+label {
+	cursor: pointer;
+	color: #555;
+}
+a:link,
+a:visited {
+	color: #369;
+	text-decoration: none;
+}
+a:hover,
+a:active {
+	color: #036;
+	text-decoration: underline;
+}
+a.disabled:hover,
+a.disabled:active {
+	color: #333;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	margin: 10px 0;
+	line-height: 1.2;
+	color: #000;
+}
+
+h1,
+.h1 {
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 0;
+}
+h2,
+.h2 {
+	font-size: 16px;
+	font-weight: normal;
+}
+h3,
+.h3 {
+	font-size: 14px;
+	font-weight: normal;
+}
+h4,
+.h4 {
+	font-size: 12px;
+	font-weight: bold;
+}
+h5,
+.h5 {
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+p,
+ul,
+ol,
+dl,
+table,
+fieldset {
+	margin-bottom: 5px;
+}
+
+ul,
+ol {
+	margin-left:1.6em;
+}
+li {
+	margin: 5px 0;
+}
+
+dt {
+	font-weight: bold;
+	margin-top: 0.5em;
+}
+dd {
+	padding: 0 1em;
+}
+
+blockquote div,
+blockquote cite {
+	padding:0 20px;
+}
+blockquote {
+	color:#999;
+}
+blockquote div {
+	font-size: 13px;
+}
+
+input[type=submit],
+input[type=button] {
+	cursor: pointer;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+th,td {
+	padding: 2px;
+}
+th {
+	text-align: left;
+	white-space: nowrap;
+}
+
+/* Set Border Radius
+--------------------------------------- */
+.box,
+.start-group,
+.banner,
+.box-start a.box-link {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#hdr-nav a,
+#hdr-search #s-terms,
+.btn,
+.frm-module {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.box-header {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+}
+
+.box-footer {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-bottomright: 4px;
+}
+
+.box-tabs.base .box-header,
+.box-tabs .ajax-form .ajax-tabs {
+	border-bottom-left-radius: 4px;
+	border-top-right-radius: 0px;
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-topright: 0px;
+}
+
+.box-tabs.base .box-content {
+	border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+}
+
+.box-tabs .box-content #msgs {
+	border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+}
+
+.box-tabs.base .box-footer {
+	border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+}
+
+.box-tabs.box-tabs-no-footer .box-content {
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+}
+
+#hdr-search #s-button,
+.sub-nav a,
+.btn-b,
+.usr-photo,
+.lst li,
+.lst a,
+.tags em {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.submenu {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+}
+
+/*  Header
+-------------------------------------------------- */
+#str-header {
+	background: #2c2c2c url(../img/header-bg.png) 0 0 repeat-x;
+	border-bottom: 1px solid #333;
+}
+#logo {
+	color: #ccc;
+	font-size: 20px;
+	line-height: 18px;
+	margin-right: 20px;
+}
+#logo a,
+#logo a:visited,
+#logo a:active {
+	color: #fff;
+	text-decoration: none;
+}
+#logo,
+#hdr-nav {
+	text-shadow: #000 0 -1px 1px;
+}
+#hdr-nav {
+	font-size: 12px;
+	line-height: 12px;
+}
+#hdr-nav a {
+	color: #ccc;
+	display: inline-block;
+	padding: 4px 7px 5px 7px;
+}
+#hdr-nav a:hover {
+	color: #fff;
+}
+#hdr-nav li:hover a,
+#hdr-nav a.current {
+	background: #555;
+	color: #dbdbdb;
+	text-decoration: none;
+	text-shadow: #333 0 -1px 1px;
+}
+
+/* sub-nav */
+#hdr-nav .nav-sub {
+	background: url(../img/nav-sub.png) bottom left no-repeat;
+	left: 50%;
+	margin: 0 0 0 -67px;
+	padding: 0 0 4px 0;
+	width: 134px;
+}
+#hdr-nav .nav-sub li,
+#hdr-nav .nav-sub a {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+#hdr-nav .nav-sub li {
+	border-top: 1px solid #444;
+	margin: 0 3px;
+}
+#hdr-nav .nav-sub li:first-child {
+	background: url(../img/nav-sub.png) top right no-repeat;
+	border-top: 0;
+	margin: 0;
+	padding: 9px 3px 0 3px;
+}
+#hdr-nav .nav-sub a {
+	display: block;
+	padding: 5px 8px 7px 8px;
+}
+#hdr-nav .nav-sub a:hover,
+#hdr-nav .nav-sub a.current {
+	background-color: #353535;
+}
+/* trying to solve notch rollover/current issue, still needs solution
+#hdr-nav .nav-sub li:first-child a:hover,
+#hdr-nav .nav-sub li:first-child a.current {
+	background: #1b313e url(../img/nav-sub.png) -250px right no-repeat;
+}
+*/
+
+/* search */
+#hdr-search #s-terms {
+	background-color: #fff;
+	border: 1px solid #999;
+	color: #999;
+	font-size: 12px;
+	line-height: 12px;
+	padding: 2px 4px;
+	width: 205px;
+}
+#hdr-search #s-button {
+	background: url(../img/search-icon.png) 0 0 no-repeat;
+	border: 0;
+	height: 19px;
+	text-indent: -999px;
+	overflow: hidden;
+	position: absolute;
+	right: 2px;
+	top: 1px;
+	width: 19px;
+}
+#hdr-search #s-button:hover {
+	background-position: 0 -19px;
+}
+#s-terms:focus {
+	color: #333;
+}
+/* search-tips */
+.s-tips {
+	border: 1px solid #bbb;
+	border-top: 0;
+	margin: 0 3px;
+	width: 207px;
+}
+.s-tips a {
+	display: block;
+}
+.s-tips-title,
+.s-tips ul,
+.s-tips li,
+.s-tips p {
+	margin:0;
+}
+#hdr-search .s-tips-title,
+#hdr-search .s-tips-view-all {
+	background: #ccc url(../img/s-tips-gradient.gif) 0 0 repeat-x;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.s-tips-title {
+	color: #fff;
+	font-size: 9px;
+	line-height: 1em;
+	padding: 4px 5px;
+	margin:0;
+}
+.s-tips ul {
+	list-style-type: none;
+	max-height: 500px;
+	overflow: auto;
+}
+.s-tips li {
+	padding: 4px 6px;
+}
+.s-tips li:hover {
+	background-color: #eee;
+}
+.s-tips li.otypeahead-current {
+	background-color: #eff6ff;
+}
+.s-tips li.none {
+	color: #666;
+	font-size: 12px;
+	padding: 6px;
+}
+.s-tips li h4 {
+	font-weight: normal;
+	margin: 0 0 3px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.s-tips li p {
+	color: #666;
+	font-size: 10px;
+}
+.s-tips .s-tips-view-all {
+	font-size: 9px;
+	margin: 0;
+	padding: 0 5px;
+	text-align: right;
+}
+.s-tips .s-tips-view-all a {
+	color: #fff;
+}
+.s-tips .s-tips-view-all.otypeahead-current a,
+.s-tips .s-tips-view-all a:hover {
+	color: #036;
+}
+
+/* Body
+ * bg image for full height sidebar border color
+-------------------------------------------------- */
+#str-body {
+	background: url(../img/page-tile.png) top right repeat-y;
+}
+
+/* Content Header
+-------------------------------------------------- */
+#cnt-header h1 {
+	font-size: 16px;
+	line-height: 20px;
+}
+#cnt-header h1 span {
+	color: #999;
+}
+
+/* Content Box
+-------------------------------------------------- */
+/* .box-header */
+.box {
+	background-color: #fff;
+	border: 1px solid #bbb;
+}
+.box-header {
+	background: #ebebeb url(../img/box-header-bg.png) 0 0 repeat-x;
+	border-bottom: 1px solid #bbb;
+	padding: 5px 10px;
+	position: relative;
+}
+.box-header.bdr-top {
+	border-top: 1px solid #bbb;
+}
+.box-header h2 {
+	text-shadow: #fff 0 1px 0;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+	margin: 0;
+}
+.box-actions {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 4px;
+	right: 5px;
+}
+.box-header .box-actions-li {
+	border-bottom: 0;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+/* .box-content */
+.box-content {
+	overflow: hidden;
+}
+
+/**
+ * @section Fieldsets
+ * @uses ie7.css
+ *
+ * Standard fieldsets come in without any styling. They are purely semantic.
+ * If we want to use the fieldset style, we can add the class .has-legend.
+ * This adds a border and a paired padding/negative margin to bring the
+ * border out flush to the edge of the box.
+ *
+ *.fieldset and .legend classes style generic element (div) and title to look like
+ * fieldset/legend that has .has-legend applied.
+ -------------------------------------------------- */
+/**
+ * Fieldsets outside of .box-content
+ */
+.box fieldset {
+	border: 0;
+	margin: 10px 12px;
+}
+/**
+ * Fieldsets inside of .box-content don't need margin (comes from .box-content)
+ */
+.box .box-content fieldset {
+	margin: 0;
+}
+.box fieldset.has-legend,
+.fieldset {
+	border-top: 1px solid #bbb;
+	margin: 0 -12px 14px;
+	padding: 0 12px;
+}
+.box fieldset legend,
+.legend {
+	margin: 0 -4px;
+	padding: 0 4px;
+	text-transform: uppercase;
+}
+.fieldset {
+	margin-top: 12px;
+	padding: 12px;
+	position: relative;
+}
+.legend {
+	background-color: #fff;
+	font-size: 1em;
+	line-height: 1em;
+	left: 12px;
+	position: absolute;
+	top: -6px;
+}
+
+.box .delete-fieldset {
+	color: #999;
+	float: right;
+	font-size: 10px;
+	letter-spacing: 1px;
+	margin-right: 4px;
+	text-transform: uppercase;
+}
+.box .delete-fieldset:hover {
+	color: #c00;
+}
+/* .box-footer */
+.box-footer {
+	background: #f1f1f1 url(../img/box-footer-pgn-bg.png) 0 0 repeat-x;
+	text-align: center;
+}
+.box-footer input { margin: 6px; }
+
+/* Connected Boxes */
+.box-fuse-bottom,
+.box-fuse-bottom .box-footer {
+	margin-bottom: 0;
+	border-bottom: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	-moz-border-radius-bottomleft: 0 !important;
+	-moz-border-radius-bottomright: 0 !important;
+	-webkit-border-bottom-left-radius: 0 !important;
+	-webkit-border-bottom-right-radius: 0 !important;
+}
+.box-fuse-top,
+.box-fuse-top .box-header {
+	margin-top: 0;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	-moz-border-radius-topleft: 0 !important;
+	-moz-border-radius-topright: 0 !important;
+	-webkit-border-top-left-radius: 0 !important;
+	-webkit-border-top-right-radius: 0 !important;
+}
+
+
+/* Box Tabs
+-------------------------------------------------- */
+.box.box-tabs,
+.box-tabs.base .box-header ul a:hover,
+.box-tabs .ajax-tabs ul a:hover {
+	background: #ddd url(../img/box-tabs-bg.png) 138px 0 repeat-y;
+}
+.box-tabs.base .box-header,
+.box-tabs .ajax-tabs {
+	background: none;
+	border: 0;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 140px;
+}
+.box-tabs.base .box-header ul,
+.box-tabs .ajax-tabs {
+	list-style-type: none;
+	margin: 7px 0;
+	padding: 0;
+}
+.box-tabs .box-header li,
+.box-tabs .ajax-tabs li {
+	margin: 0;
+	padding: 0;
+}
+.box-tabs.base .box-header ul a,
+.box-tabs .ajax-tabs a {
+	color: #333;
+	display: block;
+	font-size: 12px;
+	padding: 5px 12px;
+	text-decoration: none;
+}
+.box-tabs.base .box-header ul a:hover,
+.box-tabs .ajax-tabs a:hover {
+	background-color: #e9e9e9;
+	margin-right: 2px;
+}
+.box-tabs .box-header ul a.current,
+.box-tabs .ajax-tabs a.current {
+	color: #000;
+	background: #f0f0f0 url(../img/box-tabs-bg.png) 100% 50% repeat-y;
+	margin-right: 0;
+	font-weight: bold;
+}
+.box-tabs .box-content,
+.box-tabs .box-footer {
+	margin: 0 0 0 140px;
+}
+.box-tabs .box-content {
+	background-color: #fff;
+	overflow: visible; /* fix width issue with webkit */
+}
+.box-tabs.ajax .box-footer {
+	clear: both;
+}
+.box-tabs.ajax .box-content,
+.box-tabs.ajax .box-footer {
+	margin:  0;
+}
+
+
+/* Sidebar
+-------------------------------------------------- */
+#str-sidebar aside {
+	border-top: 1px solid #999;
+	padding: 12px;
+}
+#str-sidebar h1 {
+	font-size: 15px;
+	margin-top: 0;
+}
+#str-sidebar h2 {
+	color: #888;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 12px 0 6px 0;
+	text-transform: uppercase;
+	text-shadow: #fff 0 1px 0;
+}
+.lst {
+	list-style-type: none;
+	margin-left: 0;
+}
+/* user profile */
+#str-sidebar .usr-profile {
+	border-top: 0;
+	position: relative;
+	padding-left: 52px;
+}
+.usr-profile .usr-photo {
+	left: 12px;
+	position:absolute;
+	top: 13px;
+}
+.usr-profile .usr-fn {
+	line-height: 1em;
+	margin: 0 0 4px 0;
+}
+.usr-profile .usr-nav {
+	font-size: 10px;
+	margin: 0;
+}
+.usr-profile .usr-nav a {
+	color: #666;
+}
+.usr-profile .usr-nav a:hover {
+	color: #036;
+}
+.usr-profile .usr-nav li {
+	display:inline;
+	margin-right: .5em;
+}
+
+/* Footer
+-------------------------------------------------- */
+#str-footer {
+	background: #f5f5f5;
+	border-top: 1px solid #ccc;
+	color: #999;
+	font-size: 10px;
+}
+
+#str-footer a {
+	color: #999;
+}
+#str-footer a:hover {
+	text-decoration: underline;
+}
+#str-footer .cf-branding {
+	line-height: 1; /* Override footer line-height */
+	position: absolute;
+	right: 8px;
+	top: 11px;
+}
+#str-footer ul,
+#str-footer p {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+#str-footer ul,
+#str-footer li {
+	list-style-type: none;
+}
+#str-footer li {
+	display: inline;
+	margin: 0 2em 0 0;
+	padding: 0;
+}
+
+/* Box Start - App Landing Page
+-------------------------------------------------- */
+.box-start {
+	padding: 4em 10em;
+}
+.box-start div {
+	display: block;
+	position: relative;
+	margin: 0;
+}
+.box-start h1 {
+	line-height: 1em;
+	margin: 0;
+}
+.box-start p {
+	margin: 8px 0 0 0;
+}
+.box-start a.box-link {
+	display: block;
+	color: #333;
+	padding: 18px 25px 20px 25px;
+	border-radius: 5px;
+}
+.box-start a.box-link h1 {
+	color: #369;
+}
+.box-start a.box-link:hover {
+	text-decoration: none;
+}
+.box-start a.box-link:hover h1 {
+	color: #036;
+}
+.box-start .start-actions {
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 18px;
+	right: 22px;
+}
+.box-start .start-actions li {
+	margin: 0;
+	padding: 0;
+}
+.box-start div.start-group:hover {
+	background-color: #eee;
+}
+.box-start div.start-group:hover .start-actions {
+	display: block;
+}
+
+
+/* Buttons
+-------------------------------------------------- */
+/* btn */
+.btn,
+a.btn {
+	background: #bcbcbc url(../img/btn-bg.png) 0 0 repeat-x;
+	border: 1px solid #666;
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 11px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 15px;
+	outline: none;
+	text-shadow: #f1f1f1 0 1px 0;
+}
+/* Remove inner border from buttons in FF */
+.btn::-moz-focus-inner {
+	border: 0;
+}
+/* Different height takes into account borders, since buttons work on border-box model */
+input.btn,
+button.btn {
+	height: 22px;
+}
+.btn-primary {
+	font-weight: bold;
+}
+.box-content input.btn,
+.box-content button.btn {
+	font-size: 10px;
+	height: 18px;
+	line-height: 16px;
+	padding: 0 10px;
+}
+.box-footer .btn {
+	font-weight: bold;
+}
+.btn:hover,
+.btn:focus {
+	background-position: 0 -50px;
+	color: #036;
+	text-decoration: none;
+}
+.btn:active,
+.btn-active,
+a.btn-active,
+.btn-active:hover {
+	background: #d3d3d3 url(../img/btn-bg.png) 0 -100px repeat-x;
+}
+.btn-active:hover,
+a.btn-active:hover {
+	color: #036;
+}
+.btn-fused-left,
+a.btn-fused-left {
+	border-right: 0;
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	-moz-border-radius-topright: 0 !important;
+	-moz-border-radius-bottomright: 0 !important;
+	-webkit-border-top-right-radius: 0 !important;
+	-webkit-border-bottom-right-radius: 0 !important;
+}
+.btn-fused-middle,
+a.btn-fused-middle {
+	border-right: 0;
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+}
+.btn-fused-right,
+a.btn-fused-right {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	-moz-border-radius-topleft: 0 !important;
+	-moz-border-radius-bottomleft: 0 !important;
+	-webkit-border-top-left-radius: 0 !important;
+	-webkit-border-bottom-left-radius: 0 !important;
+}
+
+/* btn-b */
+.btn-b,
+a.btn-b {
+	border: 1px solid transparent;
+	color: #666;
+	display: inline-block;
+	font-size: 9px;
+	height: 15px;
+	line-height: 15px;
+	letter-spacing: 1px;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-shadow: #fff 0 1px 0;
+	text-transform: uppercase;
+}
+.btn-b.active {
+	background-position: 0 -100px!important;
+}
+.btn-b:hover,
+.btn-b:focus,
+li:hover .btn-b,
+.btn-b.active {
+	background: url(../img/btnb-bg.png) 0 0 repeat-x;
+	border: 1px solid #999;
+	color: #333;
+	text-decoration: none;
+}
+.btn-b.lnk-delete:hover,
+li:hover .btn-b.lnk-delete {
+	color: #c00;
+	border: 1px solid #c00;
+}
+.has-submenu:hover .btn,
+.has-submenu:hover .btn-b {
+	position: relative;
+	z-index: 100;
+}
+.has-submenu .btn-b {
+	background: url(../img/btnb-bg.png) 100% -50px no-repeat;
+	padding-right: 13px;
+}
+.has-submenu:hover .btn-b {
+	background-position: 100% 0;
+}
+
+/* disabled button cursor state */
+.btn.dim,
+.btn-b.dim {
+	cursor: default;
+}
+
+/* Login/Install/Upgrade Screen
+-------------------------------------------------- */
+.login-screen {
+	background-color: #f5f5f5;
+	height: auto;
+	padding-top: 10em;
+}
+.box-login {
+	width: 480px;
+	margin: 0 auto;
+}
+.box-login .box-header,
+.box-install .box-header,
+.box-upgrade .box-header {
+	background: #bfbfbf url(../img/header-bg.png) 0 0 repeat-x;
+	padding: 15px 12px 16px;
+}
+.box-login .box-header h2,
+.box-install .box-header h2,
+.box-upgrade .box-header h2 {
+	color: #ccc;
+	font-size: 20px;
+	text-shadow: #000 0 -1px 1px;
+}
+.box-login #login-content {
+	margin: 0 auto;
+	width: 278px;
+	padding: 25px 0;
+}
+.box-login .elm-text,
+.box-login .elm-password {
+	width: 270px;
+}
+.box-login #elm-block--remember_me,
+.box-login #elm-block--login {
+	margin: 5px 0 0 0;
+}
+.box-login #elm-block--remember_me {
+	float: left;
+	width: 180px;
+	padding-top: 4px;
+}
+.box-login #elm-block--login {
+	float: right;
+}
+.box-login .box-content .btn,
+.box-install .box-content .btn,
+.box-upgrade .box-content .btn {
+	height: 24px;
+	line-height: 22px;
+}
+.box-login #elm-block--forgot_password {
+	clear: both;
+	font-size: 10px;
+	margin: 0;
+	padding: 15px 0 0 0;
+}
+.box-login #elm-block--forgot_password a {
+	color: #666;
+}
+.box-install #elm-block--install {
+	padding-top: 10px;
+}
+.box-login .box-footer {
+	color: #777;
+	font-size: 9px;
+	line-height: 12px;
+	min-height: 14px;
+	padding: 10px 12px;
+	text-align: left;
+	position:relative;
+}
+.box-login .box-footer a,
+.box-install .box-footer a,
+.box-upgrade .box-footer a {
+	color: #777;
+}
+.box-login .box-footer p {
+	padding-right: 170px;
+	margin: 3px 0;
+}
+.box-login .box-footer .product-by-cf {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+/* Installation Screen
+-------------------------------------------------- */
+#install,
+#upgrade {
+	height: auto;
+}
+.box-install,
+.box-upgrade {
+	width: 500px;
+	margin: 10em auto;
+}
+.box-install .box-header,
+.box-upgrade .box-header {
+	background-color: #193441;
+	padding: 20px 20px 21px;
+}
+.box-install .box-content,
+.box-upgrade .box-content {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	padding: 10px 20px;
+}
+.box-install .box-content fieldset,
+.box-upgrade .box-content fieldset {
+	background-color: #f5f5f5;
+	margin: 20px 0 15px;
+	padding: 10px 20px;
+	-moz-border-radius: 4px; /* FF1+ */
+	-webkit-border-radius: 4px; /* Saf3+, Chrome */
+	border-radius: 4px; /* Standard. IE9 */
+}
+.box-install .has-text label,
+.box-upgrade .has-text label {
+	line-height: 1em;
+}
+.box-install .elm-text,
+.box-upgrade .elm-text {
+	margin-top: 5px;
+	padding: 3px 4px;
+}
+.box-install .elm-text,
+.box-install .has-radio label,
+.box-install .has-checkbox label,
+.box-upgrade .elm-text,
+.box-upgrade .has-radio label,
+.box-upgrade .has-checkbox label {
+	font-size: 14px;
+}
+.confirm-setup {
+	text-align: center;
+	padding: 30px 0 45px;
+}
+.confirm-setup .confirm-msg {
+	color: #360;
+	margin-bottom: 20px;
+	font-size: 26px;
+}
+.confirm-setup .confirm-msg img {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.box-install #msgs,
+.box-upgrade #msgs {
+	margin: -10px -20px 20px;
+}
+.box-install #file_content {
+	resize: none;
+	background: #f6f6f6;
+	border: 1px solid #666;
+	margin: 10px 0;
+	font-family: Courier New, Courier New, monospace;
+	font-size: 12px;
+}
+
+/* Activity Stream
+-------------------------------------------------- */
+#activity-stream {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#activity-stream li {
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    padding: 10px;
+}
+#activity-stream .profile-photo {
+    float: left;
+    margin-right: 10px;
+}
+#activity-stream .created {
+    color: #999;
+}
+
+/* Roles
+-------------------------------------------------- */
+.permissions .elm-checkbox {
+	margin-left: 0;
+}

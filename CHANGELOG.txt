@@ -1,0 +1,16 @@
+# Oxygen Core Changelog
+
+## 1.0.3
+- Changed the column type from TEXT to MEDIUMTEXT on preferences.value.
+
+## 1.0.2
+- Permissions can now be grouped via the "type" attribute.
+- Roles can now be grouped via the "type" attribute.
+- Various bug fixes.
+
+## 1.0.1
+- Added objects to the activity stream.
+- Various bug fixes.
+
+## 1.0
+- Initial Release

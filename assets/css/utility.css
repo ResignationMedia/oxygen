@@ -1,0 +1,1179 @@
+/* --------------------------------------------------
+  			Oxygen Utility Classes
+-------------------------------------------------- */
+
+/* Favorite Actions
+-------------------------------------------------- */
+.fav-action a {
+	background: url(../img/fav-star.png) 0 50% no-repeat;
+	display: block;
+	height: 20px;
+	text-indent: -9999px;
+	width: 18px;
+}
+.fav-action a.fav {
+	background-position: -50px 50%;
+}
+.fav-action a:hover {
+	background-position: -100px 50%;
+}
+#fav-form {
+	display: none;
+	position: absolute;
+	text-align: center;
+	width: 280px;
+	z-index: 30;
+}
+#fav-form form {
+	background: url(../img/fav-form.png) 0 0 no-repeat;
+	padding: 20px 10px 11px 10px;
+	margin: 0;
+}
+#fav-form input {
+	margin:0 2px;
+}
+#fav-form input[type=text] {
+	font-size: 12px;
+	line-height: 18px;
+	width: 165px;
+}
+.fav-form-btm {
+	background: url(../img/fav-form.png) 0 100% no-repeat;
+	height: 15px;
+}
+
+ul.fav .fav-remove {
+	color: #c00;
+	cursor: pointer;
+	font-size: 10px;
+	margin-left: 5px;
+	visibility: hidden;
+}
+ul.fav li:hover .fav-remove {
+	visibility: visible;
+}
+
+
+/* AJAX Spinner
+-------------------------------------------------- */
+.spinner {
+	background: url(../img/spinner.gif) 10px 17px no-repeat;
+	clear: both;
+	color: #ccc;
+	height: 50px;
+}
+.spinner span {
+	display: block;
+	padding: 17px 32px 0;
+}
+
+#api_key {
+	position: relative;
+	height: 20px;
+}
+
+#api_key .spinner {
+	position: absolute;
+	top: -5px;
+	left: -10px;
+}
+
+
+/* Sub Nav
+-------------------------------------------------- */
+.sub-nav ul {
+	list-style-type: none;
+	line-height: 1em;
+}
+.sub-nav ul,
+.sub-nav li {
+	margin: 0;
+	padding: 0;
+}
+.sub-nav ul li {
+	display: inline;
+}
+.sub-nav a {
+	background-color: #ddd;
+	display: inline-block;
+	margin-right: 8px;
+	padding: 2px 6px 3px 6px;
+	color: #333;
+}
+.sub-nav a:hover {
+	color: #369;
+	text-decoration: none;
+}
+.sub-nav a.current {
+	background: #999;
+	color: #fff;
+}
+
+
+/* Submenu - drop down <ul><li><ul class="submenu">
+-- add position:relative; to parent <li>
+--------------------------------------- */
+li:hover .submenu {
+	display: block;
+}
+.submenu {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	display: none;
+	margin: 0;
+	min-width: 70px;
+	padding: 2px 0 3px;
+	position: absolute;
+}
+.submenu-left { left: 4px; }
+.submenu-right { right: 4px; }
+#cnt-header .submenu {
+	top: 21px;
+}
+.box-header .submenu {
+	top: 16px;
+}
+.submenu li,
+.submenu a {
+	border: 0 !important;
+	display: block;
+}
+.submenu li {
+	margin: 2px 0;
+	position: relative;
+}
+.submenu a {
+	padding: 1px 25px 2px 7px; /* extra right padding for .submenu-action */
+	white-space: nowrap;
+}
+.submenu a:hover {
+	background-color: #eee;
+}
+.submenu a span.sorted,
+.submenu a:hover span.sorted {
+	color: #999;
+	padding-right: 2px;
+}
+.submenu .submenu-action {
+	background-color: #fff;
+	display: none;
+	padding-left: 3px;
+	padding-right: 3px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.submenu li:hover .submenu-action {
+	display: block;
+}
+.has-submenu .submenu {
+	z-index: 99;
+}
+
+
+/* Pagination
+-------------------------------------------------- */
+.pgn {
+	background: url(../img/pgn-bg.png) 0 0 repeat-x;
+	font-size: 9px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	min-height: 24px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}
+.pgn.empty {
+	min-height: 8px;
+}
+.pgn ol,
+.pgn li,
+.pgn p {
+	margin: 0;
+}
+.pgn a,
+.pgn .pgn-list li {
+	display: inline-block;
+}
+.pgn a {
+	color: #999;
+	padding: 5px 8px;
+}
+.pgn a:hover,
+.pgn a.current {
+	color: #036;
+}
+.pgn a.current,
+.box-footer .pgn a:hover {
+	color: #333;
+}
+.pgn a.current {
+	background: url(../img/pgn-bg.png) 50% -50px no-repeat;
+	font-weight: bold;
+	text-decoration: none;
+}
+.box-footer .pgn a.current {
+	background: #f1f1f1 url(../img/box-footer-pgn-bg.png) 50% -50px no-repeat;
+}
+/* prev and next links */
+.pgn-prev,
+.pgn-next {
+	font-weight: normal;
+	position: absolute;
+	top: 0;
+}
+.pgn-prev {
+	left: 6px;
+}
+.pgn-next {
+	right: 6px;
+}
+.pgn-prev a,
+.pgn-next a {
+	background: url(../img/pgn-arrows.gif) no-repeat;
+}
+.pgn-prev a {
+	background-position: 0px 10px;
+}
+.pgn-prev a:hover {
+	background-position: 0 -40px;
+}
+.pgn-next a {
+	background-position: 100% -90px;
+}
+.pgn-next a:hover {
+	background-position: 100% -140px;
+}
+
+
+/* Grid List Style
+-------------------------------------------------- */
+/* common for list and table */
+ul.oxygen-grid,
+ol.oxygen-grid {
+	border-top: 1px solid #bbb;
+	margin-top: 5px;
+}
+table.oxygen-grid th {
+	border-bottom: 1px solid #bbb;
+}
+ul.oxygen-grid li,
+ol.oxygen-grid li,
+table.oxygen-grid td {
+	border-bottom: 1px solid #e1e1e1;
+}
+table.oxygen-grid td {
+	vertical-align: middle;
+}
+table.oxygen-grid td span {
+	color: #666;
+}
+/* list */
+ul.oxygen-grid {
+	list-style-type: none;
+	margin-left: 0;
+}
+ol.oxygen-grid {
+	list-style-position: inside;
+	margin-left: 0;
+}
+ul.oxygen-grid li,
+ol.oxygen-grid li {
+	margin: 0;
+	padding: 3px 5px;
+}
+ul.oxygen-grid li:hover,
+ol.oxygen-grid li:hover {
+	background-color: #eff6ff;
+}
+ul.oxygen-grid .itm-actions,
+ol.oxygen-grid .itm-actions {
+	float: right;
+}
+ul.oxygen-grid h3,
+ol.oxygen-grid h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+ul.oxygen-grid h3,
+ul.oxygen-grid p,
+ul.oxygen-grid ul,
+ol.oxygen-grid h3,
+ol.oxygen-grid p,
+ol.oxygen-grid ul {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+ul.oxygen-grid ul {
+	list-style-type: disc;
+}
+ul.oxygen-grid ul,
+ul.oxygen-grid ul li,
+ol.oxygen-grid ul,
+ol.oxygen-grid ul li {
+	border: 0;
+	padding: 1px 5px;
+}
+/* table */
+table.oxygen-grid {
+	width: 100%;
+}
+table.oxygen-grid th {
+	font-size: 9px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	vertical-align: bottom;
+}
+table.oxygen-grid td {
+	font-size: 11px;
+	line-height: 14px;
+}
+table.oxygen-grid tr:hover td {
+	background-color: #eff6ff;
+}
+table.oxygen-grid tr:hover td.sorted {
+	background-color: #e1eefe;
+}
+table.oxygen-grid td.itm-actions {
+	white-space: nowrap;
+}
+table.oxygen-grid th,
+table.oxygen-grid td {
+	padding: 4px 15px 4px 5px;
+}
+table.oxygen-grid th.txt-right,
+table.oxygen-grid td.txt-right {
+	white-space: nowrap;
+	padding-right: 5px;
+}
+table.oxygen-grid th.last,
+table.oxygen-grid td.last,
+table.oxygen-grid th:last-child,
+table.oxygen-grid td:last-child {
+	padding-right: 5px;
+}
+table.oxygen-grid .elm-radio,
+table.oxygen-grid .action {
+	width: 1%;
+}
+table.oxygen-grid td.sorted {
+	background: #f2f2f2;
+}
+
+/* action links - hide/show */
+ul.oxygen-grid .action,
+ol.oxygen-grid .action {
+	float: right;
+	margin-bottom: 0;
+}
+ul.oxygen-grid .action a,
+ol.oxygen-grid .action a {
+	margin:0 2px;
+}
+table.oxygen-grid td.action {
+	padding: 0 7px 0 5px;
+	white-space: nowrap;
+}
+ul.oxygen-grid .action a,
+ol.oxygen-grid .action a,
+table.oxygen-grid td.action a {
+	visibility: hidden;
+}
+ul.oxygen-grid li:hover .action a,
+ol.oxygen-grid li:hover .action a,
+table.oxygen-grid tr:hover td.action a {
+	visibility: visible;
+}
+
+
+/* Inactive */
+.inactive,
+.inactive p,
+.inactive td {
+	color: #ccc;
+}
+.inactive a {
+	color: #999;
+}
+.inactive a:hover {
+	color: #036;
+}
+.inactive dl.lst-inline dt {
+	color: #ddd;
+}
+.inactive .tags em {
+	background-color: #ddd;
+}
+.grid li.inactive,
+.grid li.inactive:hover,
+table.oxygen-grid tr.inactive td,
+table.oxygen-grid tr.inactive:hover td {
+	background: #f5f5f5;
+}
+.grid .grid-filter {
+	display: none;
+}
+
+/* loading gif */
+.oxygen-grid .grid-loading {
+	background: #fff url(../img/spinner.gif) center center no-repeat;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+/* Search results grid */
+.search.oxygen-grid ul:first-child {
+	padding-top: 5px;
+	margin-bottom: 8px;
+}
+.search.oxygen-grid ul:first-child li {
+	border: 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 2px 8px;
+}
+.search.oxygen-grid ul:first-child li:last-child {
+	border-bottom: 0;
+}
+.search.oxygen-grid ul:first-child li.none {
+	color: #999;
+	font-size: 16px;
+	padding: 100px;
+	text-align: center;
+}
+.search.oxygen-grid ul:first-child h3 {
+	font-size: 1.1em;
+}
+.search.oxygen-grid ul:first-child h3,
+.search.oxygen-grid ul:first-child p,
+.search.oxygen-grid ul:first-child ul,
+.search.oxygen-grid ul:first-child dl {
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+/* Audit
+-------------------------------------------------- */
+table.audit td.txt-right.label {
+	padding-right: 10px;
+}
+table.diff tbody tr td.same {
+	padding: 0 200px;
+}
+table.audit tr:hover td {
+	background-color: transparent;
+}
+table.diff tbody tr td.same div {
+	background: #c5eac0;
+	padding: 4px;
+	text-align: center;
+}
+table.diff tbody tr td.diff {
+	background: #ffc;
+}
+table.diff ul {
+	padding-left: 30px;
+	text-align: left;
+}
+table.diff ul,
+table.diff ul li {
+	list-style: disc;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+/* Forms
+-------------------------------------------------- */
+/* wrapper for labels and form elements */
+.elm-block {
+	margin-bottom: 10px;
+}
+
+.frm-footer .elm-block {
+	margin: 0;
+}
+
+/* Adds lines between .elm-block */
+.oxygen-grid .elm-block {
+	border-top: 1px solid #ddd;
+	margin: 0;
+	padding: 0.5em;
+}
+.oxygen-grid .elm-block:last-child {
+	border-bottom: 1px solid #ddd;
+}
+
+.oxygen-grid.collision .elm-block {
+	border-top: 0;
+	border-bottom: 0;
+}
+
+/* Types of form elements */
+.elm-date,
+.elm-readonly,
+.elm-hidden,
+.elm-text,
+.elm-password,
+.elm-select,
+.elm-textarea {
+	font-size: 12px;
+	padding: 2px;
+}
+
+span.elm-checkbox,
+span.elm-flag,
+span.elm-date,
+span.elm-readonly,
+span.elm-hidden,
+span.elm-text,
+span.elm-password,
+span.elm-select,
+div.elm-textarea {
+	padding: 2px 0;
+}
+
+.view label.lbl-checkbox,
+.view label.lbl-flag,
+.view label.lbl-radio {
+	color: #555;
+	font-size: 11px;
+}
+
+/* Labels above form elements */
+.lbl-pos-top .lbl-date,
+.lbl-pos-top .lbl-readonly,
+.lbl-pos-top .lbl-hidden,
+.lbl-pos-top .lbl-text,
+.lbl-pos-top .lbl-input,
+.lbl-pos-top .lbl-textarea,
+.lbl-pos-top .lbl-select,
+.lbl-pos-top .lbl-password {
+	display: block;
+}
+.lbl-pos-top label.lbl-checkbox,
+.lbl-pos-top label.lbl-flag,
+.lbl-pos-top label.lbl-radio {
+	cursor: pointer;
+	display: inline;
+}
+.lbl-pos-left .elm-block {
+	clear: both;
+}
+
+/* Labels float left of form elements */
+.lbl-pos-left label,
+.lbl-pos-left .view label.lbl-checkbox,
+.lbl-pos-left .view label.lbl-flag,
+.lbl-pos-left .view label.lbl-radio {
+	width: 120px; /* needs to match .lbl-left .elm-* margin-left */
+	float: left;
+}
+.lbl-pos-left label,
+.lbl-pos-left span.view {
+	padding-top: 3px;
+}
+.lbl-pos-left span.view {
+	display: inline-block;
+}
+.lbl-pos-left label.lbl-checkbox,
+.lbl-pos-left label.lbl-flag,
+.lbl-pos-left label.lbl-radio {
+	width: auto;
+	padding-top: 0;
+	float: none;
+}
+.lbl-pos-left .elm-checkbox,
+.lbl-pos-left .elm-flag,
+.lbl-pos-left .elm-radio {
+	margin-left: 120px; /* needs to match .lbl-left .lbl-* width */
+}
+/* remaining labels left for view only */
+.lbl-pos-left .view label.lbl-checkbox,
+.lbl-pos-left .view label.lbl-flag,
+.lbl-pos-left .view label.lbl-radio {
+	color: #555;
+	font-size: 11px;
+	padding-top: 3px;
+}
+.lbl-pos-left .view .elm-checkbox,
+.lbl-pos-left .view .elm-flag,
+.lbl-pos-left .view .elm-radio {
+	margin-left: 0;
+}
+/* align labels right, use with lbl-pos-left */
+.lbl-align-right label {
+	text-align: right;
+	margin-right: 10px;
+}
+
+/* Set form element width's */
+.elm-width-300 .elm-text,
+.elm-width-300 .elm-password,
+.elm-width-300 .elm-textarea {
+	width: 300px;
+}
+.elm-width-500 .elm-text,
+.elm-width-500 .elm-password,
+.elm-width-500 .elm-textarea {
+	width: 500px;
+}
+.elm-width-200 .elm-text,
+.elm-width-200 .elm-password,
+.elm-width-200 .elm-textarea {
+	width: 200px;
+}
+.elm-width-100 .elm-text,
+.elm-width-100 .elm-password,
+.elm-width-100 .elm-textarea {
+	width: 100px;
+}
+.elm-width-full .elm-text,
+.elm-width-full .elm-password,
+.elm-width-full .elm-textarea {
+	/**
+	 * Box model CSS3 change
+	 * @see http://www.quirksmode.org/css/box.html
+	 * Additional workaround in IE7.css
+	 */
+	-moz-box-sizing: border-box; /* FF1+ */
+	-webkit-box-sizing: border-box; /* Saf3+ */
+	box-sizing: border-box; /* Standard. Opera7+, IE8+ */
+	width: 100%;
+}
+/* Adjust width to be almost full when lbl-pos-left */
+.lbl-pos-left .elm-width-full .elm-text,
+.lbl-pos-left .elm-width-full .elm-password,
+.lbl-pos-left .elm-width-full .elm-textarea {
+	width: 80%;
+}
+/* Set form element heights (textarea) */
+.elm-height-60 .elm-textarea {
+	height: 60px;
+}
+.elm-height-100 .elm-textarea {
+	height: 100px;
+}
+.elm-height-500 .elm-textarea {
+	height: 500px;
+}
+
+/* checkbox and radio lists */
+.lbl-checkbox-group,
+.lbl-radio-group {
+	font-size: 1em;
+}
+.has-checkbox ul,
+.has-checkboxes ul,
+.has-radio ul,
+.has-radios ul {
+	list-style-type: none;
+	margin-left: 0;
+}
+.has-checkbox li,
+.has-checkboxes li,
+.has-radio li {
+	overflow: hidden;
+}
+
+li .elm-checkbox,
+li .elm-radio {
+	float: left;
+	margin: 1px;
+	vertical-align: middle;
+}
+li .lbl-checkbox,
+li .lbl-radio {
+	display: block;
+	padding-left: 5px;
+}
+
+/* Help text */
+.help {
+	color: #999;
+}
+.has-textarea .help {
+	display: block;
+}
+.has-text .help-right,
+.has-select .help-right {
+	padding-left: 7px;
+}
+
+/* larger label and input size */
+.title { font-size: 1.2em; }
+.title input { font-size: 1.2em; }
+
+.lbl-hide label,
+label.lbl-hide {
+	display: none;
+}
+
+/* Search Rows */
+.elm-dsp-search {
+	clear: both;
+	margin-bottom: 10px;
+}
+.elm-dsp-search.has-text label,
+.elm-dsp-search.has-textarea label {
+	float: left;
+	width: 90px;
+	padding-top: 9px;
+}
+.elm-dsp-search.has-text .where,
+.elm-dsp-search.has-textarea .where {
+	float: left;
+	margin: 5px 10px;
+}
+
+/**
+ * Form Modules - stacked boxes
+ * @uses ie7.css for inline-block fix
+ */
+.box .box-content .frm-module {
+	border: 1px solid #ccc;
+	display: -moz-inline-box;
+	display: inline-block;
+	margin: 0 12px 12px 0;
+	padding: 0 10px 10px 10px;
+	vertical-align: top;
+	width: 230px;
+}
+
+/* token-menus */
+.token-menus {
+	background-color: #f1f1f1;
+	padding: 3px;
+	width: 99%;
+}
+
+/* Tags for indicator styling */
+.tags em {
+	color: #fff;
+	background-color: #b2b2b2;
+	display: inline-block;
+	font-size: 9px;
+	font-style: normal;
+	line-height: 1em;
+	margin: 1px 0;
+	padding: 2px 3px;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+
+/* Notifications and Messages */
+.msgs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.msgs li {
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+	margin: 0;
+	padding: 4px 12px 5px 29px;
+}
+td.confirm {
+	background-color: #e4ffc9;
+
+}
+.msgs li.confirm {
+	background: #e4ffc9 url(../img/msgs-icon-confirm.gif) 12px 50% no-repeat;
+	border-color: #688947;
+	color: #514721;
+}
+.msgs li.error {
+	background: #fbe3e4 url(../img/msgs-icon-error.gif) 12px 50% no-repeat;
+	border-color: #B95A48;
+	color: #8a1f11;
+}
+.msgs li.info {
+	background: #e4f3ff url(../img/msgs-icon-info.gif) 12px 50% no-repeat;
+	border-color: #899DAF;
+	color: #414B53;
+}
+.msgs li.warning {
+	background: #ffc url(../img/msgs-icon-warning.gif) 12px 50% no-repeat;
+	border-color: #8B8C01;
+	color: #3D3E00;
+}
+.msgs li.trash {
+	background: #ffedcf url(../img/msgs-icon-trash.gif) 12px 50% no-repeat;
+	border-color: #5f503b;
+	color: #2b241b;
+}
+.msgs li.trash a {
+	color: #2b241b;
+	font-weight: bold;
+}
+.box-content .msgs {
+	margin: -10px -12px 10px -12px;
+}
+
+.box-tabs .box-content .msgs {
+	margin: -10px -12px 10px;
+}
+
+.banner,
+.banner-trash {
+	font-size: 13px;
+	line-height: 18px;
+}
+.banner {
+	background: #fff6bf;
+	border: #ffd324 1px solid;
+	color: #514721;
+}
+.banner a:hover {
+	text-decoration: underline;
+}
+.banner.notice {
+	background: #fff6bf url(../img/msgs-icon-info.gif) 12px 50% no-repeat;
+	border: #5f503b 1px solid;
+	color: #514721;
+	padding-left: 29px;
+}
+.banner.notice a {
+	color: #514721;
+	font-weight: bold;
+}
+.banner.trash {
+	background: #ffedcf url(../img/msgs-icon-trash.gif) 12px 50% no-repeat;
+	border: #5f503b 1px solid;
+	color: #2b241b;
+	padding-left: 29px;
+}
+.banner.trash a {
+	color: #2b241b;
+	font-weight: bold;
+}
+
+/* These styles used to wrap form elements as in comps, not being used as of 2010-03-08 */
+.error,
+.notice,
+.success {
+	padding: 3px 6px;
+	margin-left: -6px;
+	margin-right: -6px;
+}
+.error {
+	background:#fbe3e4;
+	color:#8a1f11;
+}
+.notice {
+	background:#fff6bf;
+	color:#514721;
+}
+.success {
+	background:#e4ffc9;
+	color:#264409;
+}
+.error a { color:#8a1f11; }
+.notice a { color:#514721; }
+.success a { color:#264409; }
+
+
+/* Documentation
+-------------------------------------------------- */
+.doc {
+	padding: 0 8em 4em 8em;
+}
+.doc h1,
+.doc h2,
+.doc h3,
+.doc h4,
+.doc h5,
+.doc h6 {
+	margin-top: 1.5em;
+}
+.doc h1 {
+	border-bottom: 1px solid #bbb;
+	margin-top: 2em;
+	padding-bottom: 2px;
+}
+.doc p,
+.doc ul,
+.doc ol,
+.doc pre {
+	margin-bottom: 8px;
+}
+.doc pre {
+	background-color: #f1f1f1;
+	border: 1px solid #bbb;
+	padding: 10px;
+}
+.doc code {
+	color: #000;
+}
+
+
+
+/* --------------------------------------------------
+  			Standard Utility Classes
+-------------------------------------------------- */
+
+/* Hiding
+-------------------------------------------------- */
+
+.hidden {
+	display: none;
+}
+.invisible {
+	visibility: hidden;
+}
+.dim {
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+
+/* Clearing
+-------------------------------------------------- */
+/* Clearing floats without extra markup [http: //www.positioniseverything.net/easyclearing.html] */
+.clearfix {
+	display: block;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clear {
+	clear: both;
+	float: none;
+	height: 1px;
+}
+
+/* Display
+-------------------------------------------------- */
+.block {
+	display: block;
+}
+.inline {
+	display: inline;
+}
+
+/* Alignment/Layout
+-------------------------------------------------- */
+.txt-left {
+	text-align: left;
+}
+.txt-right {
+	text-align: right;
+}
+.txt-center {
+	text-align: center;
+}
+
+.flt-left {
+	float: left;
+}
+.flt-right {
+	float: right;
+}
+.no-wrap {
+	white-space: nowrap;
+}
+
+/* Links
+-------------------------------------------------- */
+.lnk-remove:hover,
+.lnk-delete:hover {
+	color: #c00 !important;
+}
+
+/* Margins/Padding
+-------------------------------------------------- */
+.mar-none {
+	margin: 0;
+}
+.mar-bottom-none {
+	margin-bottom: 0;
+}
+.mar-bottom-single {
+	margin-bottom: 15px;
+}
+.mar-bottom-double {
+	margin-bottom: 30px;
+}
+.mar-top-none {
+	margin-top: 0;
+}
+.mar-top-single {
+	margin-top: 5px;
+}
+.mar-top-double {
+	margin-top: 30px;
+}
+.mar-left-single {
+	margin-left: 15px;
+}
+.mar-right-single {
+	margin-right: 15px;
+}
+
+.pad-none {
+	padding: 0;
+}
+.pad-single {
+	padding: 15px;
+}
+.pad-double {
+	padding: 30px;
+}
+.pad-bottom-none {
+	padding-bottom: 0;
+}
+.pad-bottom-single {
+	padding-bottom: 15px;
+}
+.pad-bottom-double {
+	padding-bottom: 30px;
+}
+.pad-top-none {
+	padding-top: 0;
+}
+.pad-top-single {
+	padding-top: 15px;
+}
+.pad-top-double {
+	padding-top: 30px;
+}
+
+/* Borders
+-------------------------------------------------- */
+.bdr-top {
+	border-top: 1px solid #ccc;
+}
+.bdr-btm {
+	border-bottom: 1px solid #ccc;
+}
+
+/* Typography
+-------------------------------------------------- */
+.typ-intro {
+	font-size: 14px;
+}
+.typ-caps {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.typ-small {
+	font-size: 11px;
+	line-height: 1.4em;
+}
+.typ-x-small {
+	font-size: 10px;
+	line-height: 1.4em;
+}
+.typ-xx-small {
+	font-size: 9px;
+	line-height: 1.4em;
+}
+.typ-quiet {
+	color: #999;
+}
+
+/* List Styles
+-------------------------------------------------- */
+.lst-none {
+	list-style-type: none;
+	margin-left: 0;
+}
+.lst-inline li {
+	display: inline-block;
+}
+dl.lst-inline dt,
+dl.lst-inline dd {
+	display: inline;
+}
+dl.lst-inline dt {
+	color: #666;
+	font-weight: normal;
+}
+dl.lst-inline dd {
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+
+
+/* Lightbox Styles
+-------------------------------------------------- */
+/* Gets shown with DOMwindow */
+.lightbox {
+	display: none;
+}
+/* Shadow for lightbox box */
+.box-lightbox {
+	box-shadow: 0 2px 5px #666;
+	-moz-box-shadow: 0 2px 5px #666;
+	-webkit-box-shadow: 0 2px 5px #666;
+}
+/**
+ *	Setting fixed sizes to have scroll bars show on box-content and not lightbox
+ *  default 10px of padding from DOMwindow used for box-shadow space
+ */
+.box-small .box-content {
+	max-height: 138px;
+}
+.box-medium .box-content {
+	max-height: 378px;
+}
+.box-large .box-content {
+	max-height: 518px;
+}
+/* get ready for scrollbars if needed */
+.box-lightbox .box-content {
+	overflow-y: auto!important;
+}
+#DOMWindow .box {
+	margin: 0;
+}
+
+/* User/Contact View
+-------------------------------------------------- */
+.profile-view .box-content fieldset {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.profile-view .box-content fieldset .elm-block {
+	margin: 5px 0;
+}
+.profile-img {
+	float: left;
+	margin-right: 10px;
+	text-align: right;
+	width: 120px;
+}
+.lbl-pos-left .view.long-content span {
+	float: left;
+	width: 75%;
+}
+
+/* Icons
+-------------------------------------------------- */
+.icon {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+.icon span {
+	display: none;
+}
+
+.icon.remove {
+	background-image: url('../img/icons/minus-button.png');
+}
+
+.icon.edit {
+	background-image: url('../img/icons/pencil.png');
+}
+
+.icon.save {
+	background-image: url('../img/icons/disk.png');
+}
